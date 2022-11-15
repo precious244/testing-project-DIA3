@@ -30,6 +30,14 @@ export class ApplyComponent implements OnInit {
           jobId: id,
           jobStatus: "visible"
         }
+        this.jobService.getDetailJob(params).subscribe(
+          (response: any) => {
+            this.applyModel.applyModelForm = response.data;
+            console.log(this.applyModel.applyModelForm)
+          },
+          (error) => {
+            this.applyModel.applyModelForm = error.error;
+        })  
     })
   }
   

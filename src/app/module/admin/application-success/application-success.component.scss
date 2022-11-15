@@ -18,6 +18,7 @@ $blue: #006EFF;
 }
 
 .hw{
+    text-align: center;
     margin-top: 30px;
     font-weight: 900;
     font-size: 25px;
@@ -39,9 +40,11 @@ $blue: #006EFF;
     line-height: 20px;
     text-align: center;
     width: 761px;
+    // width: 761px;
     height: 40px;
     margin-top: 15px;
     color: $gray;
+    right: 300px;
 }
 
 

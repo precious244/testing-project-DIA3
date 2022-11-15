@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-modal-upload-cv',
@@ -10,7 +11,9 @@ export class ModalUploadCvComponent implements OnInit {
   @Input() file: any;
   @Input() onUpload: any;
 
-  constructor() { }
+  constructor(
+    public readonly router: Router
+  ) { }
 
   ngOnInit(): void {
   }
@@ -21,6 +24,10 @@ export class ModalUploadCvComponent implements OnInit {
 
   upload() {
     this.onUpload()
+  }
+
+  close() {
+    this.router.navigate(["admin/application-success"]);
   }
 
 }
