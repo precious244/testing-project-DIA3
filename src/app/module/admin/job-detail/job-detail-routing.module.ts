@@ -4,10 +4,7 @@ import { ApplyComponent } from '../apply/apply.component';
 import { JobDetailComponent } from './job-detail.component';
 
 const routes: Routes = [
-  {
-    path: "admin/apply/:id",
-    component: ApplyComponent
-  }
+ 
 ];
 
 @NgModule({

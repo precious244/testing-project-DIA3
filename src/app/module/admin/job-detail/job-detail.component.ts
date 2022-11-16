@@ -11,6 +11,8 @@ import { JobDetailModel } from './model/job-detail-model';
 export class JobDetailComponent implements OnInit {
 
   jobDetailModel = new JobDetailModel();
+  job: any;
+  id: any;
 
   constructor(
     public readonly jobService: JobService,
@@ -31,15 +33,16 @@ export class JobDetailComponent implements OnInit {
       this.jobService.getDetailJob(params).subscribe(
         (response: any) => {
           this.jobDetailModel.singleJobs = response.data;
+          this.job = this.jobDetailModel.singleJobs;
           console.log(this.jobDetailModel.singleJobs)
         },
         (error) => {
-          this.jobDetailModel.singleJobs = error.error;
         })
     })
   }
 
   submitApply() {
-    this.router.navigate(["admin/apply"]);
+    this.job.jobId;
+    this.router.navigate([`admin/apply/${this.job.jobId}`]);
   }
 }

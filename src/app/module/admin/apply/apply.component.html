@@ -1,5 +1,4 @@
-<div class="container" > 
-    <!-- *ng="let job of applyModel.applyModelForm" -->
+<div class="container"> 
     <div class="row row-centered">
             <div class="item">
                 <div class="content">
@@ -7,15 +6,15 @@
                         <img class="image-doc"  src="../assets/image/doc.png" alt="image">
                 </div>
                 <div class="col-md-6 col-centered">
-                    <p class="text-center hw1">Your CV and Profile will be submitted for the Business Development position at PT Idea Kolaborasi Utama</p>
-                    <!-- <p class="text-center hw1">Your CV and Profile will be submitted for the {{ job.jobName }}</p>
-                        <p> at {{ job.recruiterCompany }}</p> -->
+                    <p class="text-center hw1">
+                        Your CV and Profile will be submitted for the 
+                        {{ applyModel.applyModelForm.controls['jobName'].value }}
+                    at {{ applyModel.applyModelForm.controls['recruiterCompany'].value }}</p>
                 </div>
                 <div class="input-group-append">
                     <button class="btn bg-primary rounded-pill px-5 py-2 font-style-btn btn-user btn-block"
                         type="button" (click)="openUploadCv()">Upload CV</button>
                 </div>     
-    
             </div>
     </div>
 </div>
