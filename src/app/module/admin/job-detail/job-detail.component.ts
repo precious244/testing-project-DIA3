@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth/auth.service';
 import { JobService } from 'src/app/services/job/job.service';
 import { JobDetailModel } from './model/job-detail-model';
 
@@ -11,6 +12,7 @@ import { JobDetailModel } from './model/job-detail-model';
 export class JobDetailComponent implements OnInit {
 
   jobDetailModel = new JobDetailModel();
+
   job: any;
   id: any;
 
@@ -35,8 +37,6 @@ export class JobDetailComponent implements OnInit {
           this.jobDetailModel.singleJobs = response.data;
           this.job = this.jobDetailModel.singleJobs;
           console.log(this.jobDetailModel.singleJobs)
-        },
-        (error) => {
         })
     })
   }

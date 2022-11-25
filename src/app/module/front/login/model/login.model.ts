@@ -7,7 +7,6 @@ export class LoginModel {
     });
 
     responseLogin: any = {
-
     }
 
     isInvalidLogin() {

@@ -8,14 +8,14 @@ import { environment } from 'src/environments/environment';
 })
 export class UploadFileService {
 
-  baseApiUrl = `${environment.apiUrl}/api/v1/jobseeker/user/update/resume`
-    
-  constructor(private http:HttpClient) { }
-  
-  upload(body: any):Observable<any> {
-      const formData = new FormData(); 
-      formData.append("jobseekerId", body.jobseekerId);
-      formData.append("jobseekerResume", body.jobseekerResume);
-      return this.http.post(this.baseApiUrl, formData)
-    }
+  baseApiUrl = 'http://54.251.83.205:9091/api/v1/jobseeker/user/update/resume'
+
+  constructor(private http: HttpClient) { }
+
+  upload(body: any): Observable<any> {
+    const formData = new FormData();
+    formData.append("jobseekerId", body.jobseekerId);
+    formData.append("jobseekerResume", body.jobseekerResume);
+    return this.http.post(this.baseApiUrl, formData)
   }
+}

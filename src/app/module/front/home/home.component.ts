@@ -10,6 +10,8 @@ import { HomeModel } from './model/home.model';
 })
 export class HomeComponent implements OnInit {
 
+  value = '';
+
   homeModel = new HomeModel();
 
   constructor(

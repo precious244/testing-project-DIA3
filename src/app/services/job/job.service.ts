@@ -7,13 +7,12 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class JobService {
-  [x: string]: any;
 
   constructor(private http: HttpClient) {
   }
 
   public getRecentJob(): Observable<any> {
-    const url = `${environment.apiUrl}/api/v1/jobseeker/recent`;
+    const url = 'http://54.251.83.205:9091/api/v1/jobseeker/recent';
     return this.http.get(url);
   }
 
@@ -21,7 +20,7 @@ export class JobService {
     const params = new HttpParams()
       .set('jobId', body.jobId)
       .set('jobStatus', body.jobStatus);
-    return this.http.get(`${environment.apiUrl}/api/v1/jobs/detail`, { params: params });
+    return this.http.get('http://54.251.83.205:9091/api/v1/jobs/detail', { params: params });
   }
 
   public postCV(body: any): Observable<any> {
@@ -29,7 +28,7 @@ export class JobService {
       .set('jobseekerId', body.jobseekerId)
       .set('jobseekerResume', body.jobseekerResume);
 
-    return this.http.post(`${environment.apiUrl}/api/v1/jobseeker/user/update/resume`, params);
+    return this.http.post('http://54.251.83.205:9091/api/v1/jobseeker/user/update/resume', params);
   }
 
 }

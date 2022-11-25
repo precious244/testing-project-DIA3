@@ -8,6 +8,5 @@ export class ApplyModel {
             jobName: new FormControl(''),
             recruiterCompany: new FormControl('')
         }
-        );
-    
+    );
 }

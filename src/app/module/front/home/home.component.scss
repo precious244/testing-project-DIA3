@@ -2,10 +2,42 @@
 
 $biru : #006EFF;
 $biru_card : #ECF3FF;
+$abu : #F3F3F3;
+$abu2 : #F7F7F7;
+$abu3 : #cecece;
+$abu4 : #F0F0F0;
+
 
 * {
     font-family: 'Montserrat', sans-serif;
 }
+
+mat-icon {
+    border: hidden !important;
+    color: black;
+}
+
+:host ::ng-deep .mat-form-field-flex {
+    background: white;
+    border: 2px solid $abu3;
+
+}
+
+::ng-deep .mat-form-field-underline {
+    display: none;
+}
+
+.button-search {
+    display: flex;
+    align-items: flex-start;
+
+    .btn {
+        border-radius: 0;
+        padding: 19px 0 19px 0;
+    }
+}
+
+
 
 
 @media (max-width: 1199.98px) {
@@ -55,14 +87,6 @@ $biru_card : #ECF3FF;
             }
         }
 
-        // @media (min-width: 992px) {
-
-        //     img {
-        //         margin-left: 20vh;
-        //         margin-top: -10px;
-        //     }
-        // }
-
         h1 {
             font-weight: 700;
             color: #fff;
@@ -74,7 +98,8 @@ $biru_card : #ECF3FF;
         .btn-search {
             background-color: #F5B50E;
             color: white;
-            padding: 14px;
+            border-radius: 0;
+            padding: 13px;
         }
 
         .popular-tag {
@@ -93,6 +118,12 @@ $biru_card : #ECF3FF;
 
             .tag-btn {
                 margin-left: -20px;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .tag-btn .btn {
+                margin-top: 10px;
             }
         }
     }
@@ -388,15 +419,6 @@ $biru_card : #ECF3FF;
 }
 
 .footer {
-
-    // @media (min-width: 768px) {
-
-
-    //     .svg-1 {
-    //         margin-top: 600px;
-    //     }
-
-    // }
 
 
 

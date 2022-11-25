@@ -26,6 +26,11 @@ export class ModalUploadCvComponent implements OnInit {
     this.onUpload()
   }
 
+  saves() {
+    this.onUpload()
+    this.router.navigate(["admin/application-success"]);
+  }
+
   close() {
     this.router.navigate(["admin/application-success"]);
   }

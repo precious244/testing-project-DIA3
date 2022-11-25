@@ -4,7 +4,6 @@ import { ApplyComponent } from '../apply/apply.component';
 import { JobDetailComponent } from './job-detail.component';
 
 const routes: Routes = [
- 
 ];
 
 @NgModule({

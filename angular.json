@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "/toptalent/",
             "outputPath": "dist/my-app-pretty",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -32,7 +33,9 @@
               "../my-app-pretty/node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [ 
-              "../my-app-pretty/node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "../my-app-pretty/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "../my-app-pretty/node_modules/jquery/dist/jquery.min.js",
+              "../my-app-pretty/node_modules/popper.js/dist/umd/popper.min.js"
             ]
           },
           "configurations": {
@@ -40,13 +43,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "4mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "150kb",
+                  "maximumError": "150kb"
                 }
               ],
               "fileReplacements": [

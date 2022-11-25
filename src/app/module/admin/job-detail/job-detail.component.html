@@ -12,9 +12,9 @@
                                 [ngStyle]="{'color': (job.jobPosition === 'Contractual') ? '#006EFF' : (job.jobPosition === 'Full time') ? 'green' : ''}">{{job.jobPosition}}</span>
                         </h5>
                         <a href="">
-                            <p>{{ job.recruiterCompany }}</p>
+                            {{ job.recruiterCompany }}
                         </a>
-                        <p class="text-secondary">{{ job.jobAddress }}</p>
+                        <p class="text-secondary pt-2">{{ job.jobAddress }}</p>
                         <p>Rp{{ job.jobSalary }}</p>
                         <span class="text-secondary">1 day ago</span>
                     </div>
@@ -35,66 +35,14 @@
     <hr class="my-4">
     <div class="section-job">
         <h4 class="fw-bolder mb-4">About the job</h4>
-        <h5 class="fw-bold">job requirement:</h5>
-        <div class="my-4">
-            <p>In order to carry out the obligations well, we need someone who has specific knowledge and
-                abilities
-                in a specific area. To make it easier, there are: </p>
-
-            <ul>
-                <li>
-
-                    Bachelor’s degree any related field.
-                </li>
-                <li>
-
-                    At least have 1 year experience as Business Development
-                </li>
-                <li>
-
-                    Excellent time management skills and ability to prioritise within a busy workload
-                </li>
-                <li>
-
-                    Excellent communication skills, both written and verbal
-                </li>
-            </ul>
+        <h5 class="fw-bold">Job requirement:</h5>
+        <div class="my-4" [innerHTML]="job.jobRequirement">
+            {{ job.jobRequirement}}
         </div>
 
         <h5 class="fw-bold">Job Description:</h5>
-        <div class="my-4">
-            <p>
-                Currently, we are looking for someone who can fill the position of BD Operations. Take a
-                look at
-                some points below to understand more about this role. </p>
-
-            <ul>
-                <li>
-
-                    Managing operational activities, including proactive classes tracking and forecasting of
-                    both
-                    client and for Business Development.
-                </li>
-                <li>
-
-                    Working with BD Strategy and Implementation sub-div leaders.
-                </li>
-                <li>
-                    Working with BD Strategy and Implementation sub-div leaders/
-                </li>
-                <li>
-                    Providing project management support for key focus projects across the corporate client
-                    group,
-                    as needed
-                </li>
-                <li>
-                    Work closely with the Operations Managers to ensure alignment across the Corporate
-                    client.
-                </li>
-                <li>
-                    Provide input to the classes tracking and customer retention rate.
-                </li>
-            </ul>
+        <div class="my-4" [innerHTML]="job.jobDesc">
+            {{ job.jobDesc}}
         </div>
     </div>
     <hr class="my-5">
@@ -102,30 +50,35 @@
         <div class="mb-4">
 
             <h4 class="fw-bolder">About the company</h4>
-            <p>Ideaco adalah perusahaan start-up yang fokus pada pengembangan talenta digital untuk
-                mendukung
-                transformasi digital. </p>
+            <p>{{job.recruiterDesc}}</p>
         </div>
         <h5 class="fw-bold">
             Staff
         </h5>
-        <p>1-50 Employees</p>
+        <p>{{ job.recruiterStaff}}</p>
         <h5 class="fw-bold">
             Industry
         </h5>
-        <p>Information Technology</p>
+        <p [innerHTML]="job.recruiterIndustry">{{ job.recruiterIndustry}}</p>
         <h5 class="fw-bold">
             Culture
         </h5>
-        <p>Team work, adaptable</p>
+        <p [innerHTML]="job.recruiterCulture">{{ job.recruiterCulture}}</p>
         <h5 class="fw-bold">
             Benefit
         </h5>
-        <p>Maternity leave, paid leave</p>
+        <p [innerHTML]="job.recruiterBenefit">{{ job.recruiterBenefit}}</p>
         <h5 class="fw-bold">
             Address
         </h5>
-        <p>Cervino Village Unit H Mezzanine Level, Jl. KH Abdullah Syafei No.Kav. 27, RT.3/RW.1, West Tebet,
-            Tebet, South Jakarta City, Jakarta 12810</p>
+        <p [innerHTML]="job.recruiterAddress">{{ job.recruiterAddress}}</p>
+
+        <div class="icon">
+
+            <a href="{{ job.recruiterFb}}" target="_blank"><img src="../../../../assets/fb.svg" alt=""></a>
+            <a href="{{ job.recruiterLinkedin}}" target="_blank"><img src="../../../../assets/linkedin.svg" alt=""></a>
+            <a href="recruiterIg" target="_blank"><img src="../../../../assets/instagram.svg" alt=""></a>
+            <a href="recruiterWebsite" target="_blank"><img src="../../../../assets/web.svg" alt=""></a>
+        </div>
     </div>
 </div>

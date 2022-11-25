@@ -32,36 +32,35 @@ export class ApplyComponent implements OnInit {
           jobId: id,
           jobStatus: "visible"
         }
-        console.log(data.params)
-        this.jobService.getDetailJob(params).subscribe(
-          (response: any) => {
-            this.applyModel.applyModelForm.patchValue(response.data); 
-            // console.log(this.applyModel.applyModelForm.value)
-            console.log(response.data)
+      console.log(data.params)
+      this.jobService.getDetailJob(params).subscribe(
+        (response: any) => {
+          this.applyModel.applyModelForm.patchValue(response.data);
+          // console.log(this.applyModel.applyModelForm.value)
+          console.log(response.data)
 
-          },
-          (error) => {
+        },
+        (error) => {
+        })
     })
-  }
-)
-}
-  
-openUploadCv(){
-    const modal =  this.modalService.open(
-        ModalUploadCvComponent, {size:'lg'});
-    modal.componentInstance.file = this.applyModel.applyModelForm.controls['jobseekerResume'];
-    modal.componentInstance.onUpload = () => {this.onUpload()}
-}
 
-// OnClick of button Upload
-onUpload() {
-  this.applyModel.applyModelForm.controls['jobseekerId'].setValue(203);
-  console.log(this.applyModel.applyModelForm.value)
+  }
+
+  openUploadCv() {
+    const modal = this.modalService.open(
+      ModalUploadCvComponent, { size: 'md' });
+    modal.componentInstance.file = this.applyModel.applyModelForm.controls['jobseekerResume'];
+    modal.componentInstance.onUpload = () => { this.onUpload() }
+  }
+  onUpload() {
+    this.applyModel.applyModelForm.controls['jobseekerId'].setValue(213);
+    console.log(this.applyModel.applyModelForm.value)
     this.uploadCvService.upload(this.applyModel.applyModelForm.value).subscribe(
-        (event: any) => {
-            if (typeof (event) === 'object') {
-            }
+      (event: any) => {
+        if (typeof (event) === 'object') {
         }
+      }
     );
-}
+  }
+
 }

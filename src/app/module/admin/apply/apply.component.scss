@@ -1,62 +1,58 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet');
 
-$gray:#333333;
+$gray: #333333;
 $blue: #006EFF;
 
 * {
     font-family: 'Montserrat', sans-serif;
 }
 
-.row-centered{
+.row-centered {
     text-align: center;
 }
 
-.col-centered{
+.col-centered {
     display: inline-block;
     float: none;
     text-align: center;
 }
 
-.hw{
+.hw {
     margin-top: 30px;
     font-weight: 900;
     font-size: 25px;
     line-height: 36px;
 }
 
-.image-doc{
+.image-doc {
     width: 100px;
     height: 116px;
     left: 1070px;
     top: 153px;
 }
 
-.hw1{
+.hw1 {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    text-align: center;
-    width: 638px;
-    height: 40px;
-    left: 820px;
     margin-top: 15px;
     color: $gray;
 }
 
-.btn-user{
+.btn-user {
     margin-top: 14px;
 }
 
-.font-style-btn{
+.font-style-btn {
     color: white;
 }
 
-.modal-dialog{
+.modal-dialog {
     margin-top: 100px;
     height: 500px;
     width: 600px;
-    border-radius: 20px;    
+    border-radius: 20px;
 }
 
 .image-container {
@@ -94,13 +90,13 @@ label {
     cursor: pointer;
 }
 
-.btn-1{
+.btn-1 {
     height: 45px;
     width: 222px;
     border-radius: 48px;
     background-color: #025bee;
 }
 
-.p{
+.p {
     margin-top: 28px;
 }

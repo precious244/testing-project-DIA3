@@ -9,115 +9,8 @@ $abu4 : #F0F0F0;
     font-family: 'Montserrat', sans-serif;
 }
 
-header {
-    .navbar-custom {
-        background-color: white;
-        z-index: 1000;
-
-        .navbar-brand {
-
-            img {
-                margin-bottom: 8px;
-
-            }
-        }
-
-
-        .nav-link {
-            color: black;
-        }
-
-        .active {
-            color: $biru;
-        }
-
-        .btn-primary:hover {
-            background: white;
-            color: $biru;
-            border: 1px solid $biru;
-        }
-
-        .username {
-            a {
-                text-decoration: none;
-                color: black;
-            }
-        }
-
-        @media (min-width: 992px) {
-
-            .navbar-nav {
-                margin-left: 5%;
-            }
-
-            .nav-item {
-                font-size: 15px;
-                font-weight: 700;
-
-
-                .btn {
-                    font-size: 15px;
-                    font-weight: 700;
-                    margin-left: 5px;
-                }
-            }
-
-            .username {
-                margin-top: 10px;
-            }
-        }
-
-        @media (max-width: 991.98px) {
-            .navbar-nav {
-                margin-top: 10px;
-            }
-
-            .nav-item {
-
-                .btn {
-                    margin-bottom: 10px;
-                    margin-left: -10px;
-                }
-            }
-        }
-    }
-}
-
-
-@media (max-width: 767.98px) {
-    main {
-
-        .contain {
-            margin-top: 25%;
-        }
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-    main {
-
-        .contain {
-            margin-top: 10%;
-        }
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    main {
-
-        .contain {
-            margin-top: 3%;
-        }
-    }
-}
-
-.banner {
-    width: 100%;
-}
-
-.banner img {
-    width: 100%;
-    border-radius: 8px;
+.container-fluid {
+    padding: 0 40px 40px 40px;
 }
 
 .section-title {
@@ -167,6 +60,20 @@ header {
     }
 
     .btn {
+
+        img {
+            filter: invert(25%) sepia(92%) saturate(2460%) hue-rotate(207deg) brightness(101%) contrast(105%);
+        }
+    }
+
+    .btn:hover {
+
+        img {
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(263deg) brightness(103%) contrast(101%);
+        }
+    }
+
+    .btn {
         margin-right: 15px;
         margin-top: 15px;
 
@@ -179,5 +86,23 @@ header {
         .filter-blue {
             filter: invert(25%) sepia(92%) saturate(2460%) hue-rotate(207deg) brightness(101%) contrast(105%);
         }
+    }
+
+    @media (max-width: 767.98px) {
+        .btn {
+            padding-top: 10px;
+            font-size: 10px;
+            width: 33%;
+
+            img {
+                width: 15px;
+            }
+        }
+    }
+}
+
+.icon {
+    img {
+        margin-right: 3px;
     }
 }

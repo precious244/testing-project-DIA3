@@ -8,9 +8,9 @@ describe('ModalUploadCvComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ModalUploadCvComponent ]
+      declarations: [ModalUploadCvComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(ModalUploadCvComponent);
     component = fixture.componentInstance;
