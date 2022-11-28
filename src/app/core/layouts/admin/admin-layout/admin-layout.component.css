@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+mat-icon {
+  border: hidden !important;
+  color: black;
+}
+
+:host ::ng-deep .mat-form-field-flex {
+  background: white;
+}
+
+::ng-deep .mat-form-field-underline {
+  display: none;
+}
+
+header .navbar-custom {
+  background-color: white;
+  z-index: 1000;
+}
+header .navbar-custom .navbar-brand img {
+  margin-bottom: 8px;
+}
+header .navbar-custom .nav-link {
+  color: black;
+}
+header .navbar-custom .active {
+  color: #006EFF;
+}
+header .navbar-custom .btn-primary:hover {
+  background: white;
+  color: #006EFF;
+  border: 1px solid #006EFF;
+}
+header .navbar-custom .username a {
+  text-decoration: none;
+  color: black;
+}
+@media (min-width: 992px) {
+  header .navbar-custom .navbar-nav {
+    margin-left: 5%;
+  }
+  header .navbar-custom .nav-item {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  header .navbar-custom .nav-item .btn {
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 5px;
+  }
+  header .navbar-custom .username {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 991.98px) {
+  header .navbar-custom .navbar-nav {
+    margin-top: 10px;
+  }
+  header .navbar-custom .nav-item .btn {
+    margin-bottom: 10px;
+    margin-left: -10px;
+  }
+}
+
+mat-sidenav-container {
+  height: 100%;
+}
+
+mat-sidenav {
+  background: white;
+  width: 15%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  padding-left: 2%;
+  padding-top: 80px;
+  z-index: 100;
+}
+
+@media (max-width: 767.98px) {
+  mat-sidenav {
+    width: 45%;
+  }
+}
+.shortcut-links a {
+  display: flex;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: black;
+}
+.shortcut-links a img {
+  margin-right: 20px;
+  max-width: 20px;
+}
+.shortcut-links a p {
+  margin-top: 15px;
+}
+
+mat-sidenav-content {
+  padding-top: 106px;
+  height: 100%;
+  background-color: white;
+}
+
+.find-jobs .contain {
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 20px;
+}
+.find-jobs .section-white {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.find-jobs .section-search-grey {
+  background-color: #F7F7F7;
+  border-radius: 5px;
+  padding: 20px;
+  border: 2px solid #cecece;
+}
+.find-jobs .section-search-grey button {
+  color: white;
+  border: white;
+  background-color: unset;
+}
+@media (min-width: 768px) {
+  .find-jobs .section-search-grey button {
+    margin-top: 13px;
+  }
+}
+.find-jobs .section-search-grey .category-list a {
+  margin-right: 10px;
+}
+.find-jobs .section-title a {
+  text-decoration: none;
+}
+.find-jobs .section-title p {
+  margin-bottom: 8px;
+}
+.find-jobs .section-title .badge {
+  background-color: #F0F0F0;
+}
+@media (max-width: 767.98px) {
+  .find-jobs .section-title .photo-border {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .find-jobs .section-title .photo-border {
+    margin-right: 90px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .find-jobs .section-title .photo-border {
+    margin-right: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .find-jobs .section-title .photo-border {
+    margin-right: 60px;
+  }
+}
+.find-jobs .section-title img {
+  width: 120px;
+}
+.find-jobs .section-title .col-button {
+  display: grid;
+}
+.find-jobs .section-title .col-button button {
+  margin: auto;
+}
+.find-jobs .section-title .col-button button img {
+  margin-top: -5px;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  filter: invert(25%) sepia(92%) saturate(2460%) hue-rotate(207deg) brightness(101%) contrast(105%);
+}
+.find-jobs .section-title .col-button button:hover {
+  margin: auto;
+}
+.find-jobs .section-title .col-button button:hover img {
+  margin-top: -5px;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(263deg) brightness(103%) contrast(101%);
+}
+.find-jobs .section-job-list img {
+  width: 100px;
+  height: 100px;
+}
+.find-jobs .section-job-list .job-list-text {
+  margin-left: 3%;
+}/*# sourceMappingURL=admin-layout.component.css.map */

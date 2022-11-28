@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container-fluid {
+  padding: 0 40px 40px 40px;
+}
+
+.section-title a {
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+.section-title p {
+  margin-bottom: 8px;
+}
+.section-title .badge {
+  background-color: #F0F0F0;
+}
+@media (max-width: 767.98px) {
+  .section-title .photo-border {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .section-title .photo-border {
+    margin-right: 90px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .section-title .photo-border {
+    margin-right: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-title .photo-border {
+    margin-right: 30px;
+  }
+}
+.section-title img {
+  width: 120px;
+}
+.section-title .btn img {
+  filter: invert(25%) sepia(92%) saturate(2460%) hue-rotate(207deg) brightness(101%) contrast(105%);
+}
+.section-title .btn:hover img {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(263deg) brightness(103%) contrast(101%);
+}
+.section-title .btn {
+  margin-right: 15px;
+  margin-top: 15px;
+}
+.section-title .btn img {
+  margin-top: -5px;
+  width: 20px;
+  height: 20px;
+}
+.section-title .btn .filter-blue {
+  filter: invert(25%) sepia(92%) saturate(2460%) hue-rotate(207deg) brightness(101%) contrast(105%);
+}
+@media (max-width: 767.98px) {
+  .section-title .btn {
+    padding-top: 10px;
+    font-size: 10px;
+    width: 33%;
+  }
+  .section-title .btn img {
+    width: 15px;
+  }
+}
+
+.icon img {
+  margin-right: 3px;
+}/*# sourceMappingURL=job-detail.component.css.map */

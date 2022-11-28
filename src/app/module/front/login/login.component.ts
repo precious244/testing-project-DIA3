@@ -40,4 +40,9 @@ export class LoginComponent implements OnInit {
       }
     )
   }
+
+  
+  submitForgot() {
+    this.router.navigate(["forgot-password"]);
+  }
 }

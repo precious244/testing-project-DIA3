@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+header .navbar-custom {
+  background-color: white;
+  z-index: 1000;
+  position: -webkit-sticky;
+  position: sticky;
+}
+header .navbar-custom .navbar-brand {
+  z-index: 10;
+}
+header .navbar-custom .navbar-brand img {
+  margin-bottom: 8px;
+}
+header .navbar-custom .nav-link {
+  color: black;
+}
+header .navbar-custom .active {
+  color: #006EFF;
+}
+header .navbar-custom .btn-primary:hover {
+  background: white;
+  color: #006EFF;
+  border: 1px solid #006EFF;
+}
+@media (min-width: 992px) {
+  header .navbar-custom .navbar-nav {
+    margin-left: 5%;
+  }
+  header .navbar-custom .nav-item {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  header .navbar-custom .nav-item .btn {
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 5px;
+  }
+}
+@media (max-width: 991.98px) {
+  header .navbar-custom .navbar-nav {
+    margin-top: 10px;
+  }
+  header .navbar-custom .nav-item .btn {
+    margin-bottom: 10px;
+    margin-left: -10px;
+  }
+}/*# sourceMappingURL=topbar-home.component.css.map */
