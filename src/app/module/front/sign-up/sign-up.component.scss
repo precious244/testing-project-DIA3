@@ -73,6 +73,12 @@ $biru_card : #ECF3FF;
   color: #EB5757;
 }
 
+.text-second{
+  position: relative;
+  font-size: 12px;
+  font-weight: 500;
+}
+
 .text-three{
   position: relative;
   left: 12px;
@@ -180,6 +186,13 @@ $biru_card : #ECF3FF;
   margin-top: 10px;
 }
 
+.lastname{
+  position: relative;
+  left: 268px;
+  width: 240px;
+  bottom: 66px;
+}
+
 .text-position{
   position: relative;
   left: 257px;
@@ -190,13 +203,6 @@ $biru_card : #ECF3FF;
   display: relative;
   left: 280px;
   bottom: 68px;
-}
-
-.lastname{
-  position: relative;
-  left: 268px;
-  width: 240px;
-  bottom: 66px;
 }
 
 .text4{
@@ -276,5 +282,9 @@ $biru_card : #ECF3FF;
 
 .btn-text {
   text-align: center;
+}
+
+.margin-last {
+  margin-bottom: 12px;
 }
 
